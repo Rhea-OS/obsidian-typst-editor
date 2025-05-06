@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as dom from 'react-dom/client';
 import * as obs from 'obsidian';
-import {WorkspaceLeaf} from "obsidian";
+import {TFile, WorkspaceLeaf} from "obsidian";
 
 export const TYPST_VIEW = 'typst-view';
 
@@ -20,4 +20,12 @@ export class TypstView extends obs.EditableFileView {
     getViewType(): string {
         return TYPST_VIEW;
     }
+
+	onload() {
+		const root = dom.createRoot(this.contentEl);
+
+		root.render(<>
+			<h1>{"Hello World"}</h1>
+		</>);
+	}
 }
