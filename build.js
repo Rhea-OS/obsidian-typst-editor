@@ -10,6 +10,7 @@ await esbuild.build({
 	sourcemap: true,
 	external: ['obsidian'],
 	minify: false,
+	format: 'cjs',
 	plugins: [
 		{name: 'scoped-css', setup(build) {
 			build.onResolve({ filter: /\.css\?raw$/ }, async args => ({
@@ -29,7 +30,5 @@ await esbuild.build({
 });
 
 await Promise.all([
-	//fs.copyFile('index.html', 'build/index.html'),
-	//fs.copyFile('logo/logo.svg', 'build/logo.svg'),
-	//fs.copyFile('manifest.json', 'build/manifest.json'),
+	fs.copyFile('manifest.json', 'build/manifest.json'),
 ]);

@@ -1,0 +1,8 @@
+{
+	"id": "typst-editor",
+	"name": "Typst Live Editor",
+	"version": "0.0.1",
+	"description": "Echtzeitbearbeitung für Typst Dokumente",
+	"author": "Rhea OS <jakieschneider13@gmail.com>, Oscar Giermann <>, und Johannes Jut <>",
+	"isDesktopOnly": false
+}

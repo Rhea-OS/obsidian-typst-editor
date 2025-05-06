@@ -1,5 +1,5 @@
 {
-    "name": "spreadsheet",
+    "name": "typst-editor",
     "build": "./build.js",
     "version": "0.1.0",
     "type": "module",
@@ -26,6 +26,8 @@
     "deploy": {
         "main": "run.js",
         "imports": null,
-        "scripts": null
+        "scripts": null,
+        "dependencies": null,
+        "devDependencies": null
     }
 }
