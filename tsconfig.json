@@ -7,6 +7,7 @@
         "declaration": true,
         "declarationDir": "build/lib",
         "outDir": "build/ts",
+        "noEmit": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "allowJs": true,
